@@ -6,3 +6,6 @@ bookFlatSection: true
 
 Welcome to my portfolio.
 
+> [!CAUTION]
+> **Note**  
+> This site is under construction. More content will be coming soon!
