@@ -5,3 +5,8 @@ theme = 'book'
 
 [params]
   BookSearch = false
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
