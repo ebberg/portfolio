@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Eric Berg - Technical Writing Portfolio'
+title = 'Eric Berg - technical writing portfolio'
 theme = 'book'
 
 [params]
