@@ -12,4 +12,3 @@ weight: 10
 ---
 
 # Introducing alertmon
-
