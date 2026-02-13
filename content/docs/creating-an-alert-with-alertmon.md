@@ -1,5 +1,5 @@
 ---
-title: "Creating an Alert With Alertmon"
+title: "Creating an alert with alertmon"
 weight: 40
 # bookFlatSection: false
 # bookToc: true
@@ -11,6 +11,6 @@ weight: 40
 # bookIcon: ''
 ---
 
-# Creating an Alert With Alertmon
+# Creating an alert with alertmon
 
 

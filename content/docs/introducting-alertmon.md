@@ -1,5 +1,5 @@
 ---
-title: "Introducing Alertmon"
+title: "Introducing alertmon"
 weight: 10
 # bookFlatSection: false
 # bookToc: true
@@ -11,5 +11,5 @@ weight: 10
 # bookIcon: ''
 ---
 
-# Introducing Alertmon
+# Introducing alertmon
 

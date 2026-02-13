@@ -1,5 +1,5 @@
 ---
-title: "Alertmon API Reference"
+title: "Alertmon reference"
 weight: 50
 # bookFlatSection: false
 # bookToc: true
@@ -11,6 +11,6 @@ weight: 50
 # bookIcon: ''
 ---
 
-# Alertmon API Reference
+# Alertmon reference
 
 

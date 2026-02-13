@@ -1,5 +1,5 @@
 ---
-title: "On-Call How-To"
+title: "On-call how-to"
 weight: 1
 # bookFlatSection: false
 # bookToc: true
@@ -11,5 +11,5 @@ weight: 1
 # bookIcon: ''
 ---
 
-# On-Call How-To
+# On-call how-to
 
