@@ -46,6 +46,6 @@ Alertmon is no longer actively maintained. It will take some modification in its
 
 ## More information
 
-To learn how to create an alert, see [Creating an alert with alertmon](/docs/creating-an-alert-with-alertmon/).
+To learn how to create an alert, see [Creating an alert with alertmon](/portfolio/docs/creating-an-alert-with-alertmon/).
 
-To view the reference manual, see [Alertmon Reference](/docs/alertmon-reference/).
+To view the reference manual, see [Alertmon Reference](/portfolio/docs/alertmon-reference/).
