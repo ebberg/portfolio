@@ -26,4 +26,10 @@ I wrote documentation for open-source projects I know well:
 
 [rpmbuild](https://github.com/ebberg/fsqio/tree/master/src/python/fsqio/pants/rpmbuild): I worked extensively with RPM and the rpmbuild tool in production. My documentation utilizes my knowledge of product pain points and real-world usage.
 
-Each sample targets a specific audience, has a specific impact, and demonstrates a different documentation type: reference, how-to guide, and conceptual overview.
+Each sample targets a specific audience, has a specific impact, and demonstrates a different documentation type: reference, how-to guide, and conceptual overview. My samples are:
+
+1. [On-Call incident response how-to](/docs/on-call-incident-response-how-to/)
+2. [Introducing alertmon](/docs/introducing-alertmon/)
+3. [Introducing rpmbuild](/docs/introducing-rpmbuild/)
+4. [Creating an alert with alertmon](/docs/creating-an-alert-with-alertmon/)
+5. [Alertmon reference](/docs/alertmon-reference/)
