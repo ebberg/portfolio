@@ -28,8 +28,8 @@ I wrote documentation for open-source projects I know well:
 
 Each sample targets a specific audience, has a specific impact, and demonstrates a different documentation type: reference, how-to guide, and conceptual overview. My samples are:
 
-1. [On-Call incident response how-to](/portfolio/docs/on-call-incident-response-how-to/)
-2. [Introducing alertmon](/portfolio/docs/introducing-alertmon/)
-3. [Introducing rpmbuild](/portfolio/docs/introducing-rpmbuild/)
-4. [Creating an alert with alertmon](/portfolio/docs/creating-an-alert-with-alertmon/)
-5. [Alertmon reference](/portfolio/docs/alertmon-reference/)
+1. [On-Call incident response how-to]({{< ref "docs/on-call-incident-response-how-to.md" >}})
+2. [Introducing alertmon]({{< ref "docs/introducing-alertmon.md" >}})
+3. [Introducing rpmbuild]({{< ref "docs/introducing-rpmbuild.md" >}})
+4. [Creating an alert with alertmon]({{< ref "docs/creating-an-alert-with-alertmon.md" >}})
+5. [Alertmon reference]({{< ref "docs/alertmon-reference.md" >}})

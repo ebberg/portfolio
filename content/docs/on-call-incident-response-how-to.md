@@ -56,9 +56,9 @@ This page will give you information you can use to determine if the alert is a f
 
 For more information about alertmon, see:
 
-- [Introducing alertmon](/portfolio/docs/introducing-alertmon/)
-- [Creating an alert with alertmon](/portfolio/docs/creating-an-alert-with-alertmon/)
-- [Alertmon reference](/portfolio/docs/alertmon-reference/)
+- [Introducing alertmon]({{< ref "docs/introducing-alertmon.md" >}})
+- [Creating an alert with alertmon]({{< ref "docs/creating-an-alert-with-alertmon.md" >}})
+- [Alertmon reference]({{< ref "docs/alertmon-reference.md" >}})
 
 ## 6. View dashboards in Grafana
 

@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://ebberg.github.io/portfolio/'
 languageCode = 'en-us'
 title = 'Eric Berg - technical writing portfolio'
 theme = 'book'
