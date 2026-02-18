@@ -32,7 +32,7 @@ Alertmon also isn't a replacement for a notification system like PagerDuty. Inst
 
 ## Why use alertmon
 
-Alertmon solves the problem of making alert configuration self-service. It enables large engineering teams to coordinate with the production team to define and manage their own alerts, while allowing engineers a way to change their alerts without involving production.
+Alertmon solves the problem of making alert configuration self-service. It enables large engineering teams to coordinate with the production team to define and manage their own alerts, while allowing engineers a way to change their alerts without involving production. Alertmon supports the needs of a 99.9% uptime environment.
 
 ## Reliability and failure tolerance
 
