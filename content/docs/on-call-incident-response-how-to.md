@@ -36,6 +36,7 @@ When you do get paged for an actual emergency, you need to make sure you:
 
 - Keep lines of communication open on Slack
 - Make changes or run commands with clarity into what you are doing
+- Keep a clear record of every change you make and when
 
 ## 3. Acknowledge the alert on PagerDuty
 
