@@ -1,6 +1,6 @@
 ---
 title: "Introducing alertmon"
-weight: 10
+weight: 20
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
