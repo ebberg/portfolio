@@ -47,7 +47,7 @@ This is the reference material for the URLs that reference a specific alert and 
 
 ### Unmute alert
 
-**URL***: `/alert/<alert_id>/mute/del`
+**URL**: `/alert/<alert_id>/mute/del`
 
 **Methods**: GET
 
