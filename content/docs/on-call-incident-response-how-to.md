@@ -18,7 +18,7 @@ weight: 1
 
 This how-to guide walks you through what you should do if you're paged for an incident. It's written to keep you aware of best practices and to make responding to an incident routine.
 
-## 1. Before you get paged
+## Prerequisites
 
 - Make sure you have email access and can log into the internal instance of **alertmon** to manage alerts that fire
 - Make sure you have access to the **Graphite cluster** and can log into the **Grafana dashboards**
@@ -26,7 +26,7 @@ This how-to guide walks you through what you should do if you're paged for an in
 - Make sure you have access to **Slack** to communicate with your coworkers
 - Make sure you have **VPN access** and your **Terminal** set up with SSH keys or other CLI commands you need to debug or use playbooks
 
-## 2. Remain calm
+## Remain calm
 
 The most important thing to remember about being on-call is to remain calm. Keeping calm means you can communicate clearly about the current situation, and you are better equipped to run commands error-free.
 
@@ -38,22 +38,22 @@ When you do get paged for an actual emergency, you need to make sure you:
 - Make changes or run commands with clarity into what you are doing
 - Keep a clear record of every change you make and when
 
-## 3. Acknowledge the alert on PagerDuty
+## 1. Acknowledge the alert on PagerDuty
 
-When you get paged, you first need to acknowledge the alert on PagerDuty. This way, the alert will stop ringing your phone. There's also then a record of your response. If your team set up escalation, the back-up person on-call doesn't get paged.
+Acknowledge the alert on PagerDuty to stop the alert from ringing your phone again or (if your team has escalation set up) paging the back-up on-call person. Acknowledging the alert also creates a record of your response, which can be useful when creating a post-mortem.
 
-## 4. Mention you're responding in Slack
+## 2. Mention you're responding in Slack
 
-You then want to mention you're responding to the alert on Slack. It's important to keep in communication with the team while responding to an alert. This can help with post-mortem analysis later. It also prevents confusion about the current status of the incident.
+Communicate in Slack that you're responding to the alert. Communicating with the team during an alert response prevents confusion about the status of the incident and can help with post-mortem analysis later.
 
 > [!INFO]
-> **Pro-tip**: Try to update Slack with your status every 15 minutes while an alert is ongoing, even just to say you are still working on it.
+> **Tip**: Try to update Slack with your status every 15 minutes while an alert is ongoing, even just to say you are still working on it.
 
-## 5. View alert in alertmon
+## 3. View alert in alertmon
 
-After you've let the team know you're working on it, start investigating. Start by viewing the alert in alertmon. The link is in the alert from PagerDuty. You'll need a VPN connection and email authentication to view the alert.
+Start investigating by viewing the alert in alertmon. The link is in the alert from PagerDuty. You'll need a VPN connection and email authentication to view the alert.
 
-This page will give you information you can use to determine if the alert is a false positive and further diagnosis steps. You can also mute the alert.
+The alert page will give you information you can use to determine if the alert is a false positive and further diagnosis steps. You can also mute the alert.
 
 For more information about alertmon, see:
 
@@ -61,24 +61,24 @@ For more information about alertmon, see:
 - [Creating an alert with alertmon]({{< ref "docs/creating-an-alert-with-alertmon.md" >}})
 - [Alertmon reference]({{< ref "docs/alertmon-reference.md" >}})
 
-## 6. View dashboards in Grafana
+## 4. View dashboards in Grafana
 
-Your alert should have a link to relevant dashboards in Grafana. Follow those links and view the system health as a whole. This can help you determine overall trends or issues that are relevant to the alert firing.
+Follow the alert links to relevant dashboards in Grafana and view the system health as a whole. Use this to determine overall trends or issues that are relevant to the alert firing.
 
 > [!INFO]
-> **Pro-tip**: Your first responsibility during an on-call incident is to restore service to the site. Your second responsibility is to determine root cause or *why* the incident occurred. Optimize towards restoring service first, doing investigative work later.
+> **Tip**: Your first responsibility during an on-call incident is to restore service to the site. Your second responsibility is to determine root cause or *why* the incident occurred. Optimize towards restoring service first, doing investigative work later.
 
-## 7. Follow playbook steps if relevant
+## 5. Follow playbook steps if relevant
 
-If the alert is serious, you'll need to act to restore service. The alert or the playbook documentation directory might have information relevant to this alert. The alert itself might point to a relevant playbook.
+Act to restore service if the alert is serious. Look at the alert or the playbook documentation directory for information relevant to this alert. The alert itself might point to a relevant playbook.
 
-You should follow the playbook steps to restore service. Make sure you understand each command before running it in production. Let your coworkers know on Slack what command you are running. Remember to double-check the command before pressing enter, verifying the service you are impacting and the environment you are running in.
+Follow the playbook steps to restore service. Make sure you understand each command before running it in production. Let your coworkers know on Slack what command you are running. Double-check the command before pressing enter, verifying the service you are impacting and the environment you are running in.
 
 For example, consider getting an alert that errors have increased for a given service after a deploy. In this case, you may need to roll back the service to the last deployed version. You should double-check the service, the version, and the environment before running, and let your coworkers know on Slack that you are doing this.
 
-## 8. Escalate to other engineers if necessary
+## 6. Escalate to other engineers if necessary
 
-You aren't alone when you are on-call. You can ping other engineers to assist you when you are working on an incident. You should consider escalating when:
+You aren't alone when you are on-call. Ping other engineers to assist you when you are working on an incident. Consider escalating when:
 
 - You're stuck, with 15 minutes or more going by without answers
 - The service impacted requires specialist knowledge to diagnose
@@ -86,12 +86,12 @@ You aren't alone when you are on-call. You can ping other engineers to assist yo
 
 It's not a flaw to need help during an incident. It's best to bring people into the incident resolution to get the problem resolved in short order.
 
-## 9. Mention resolution in Slack
+## 7. Mention resolution in Slack
 
-When the incident has concluded, graphs will return to normal, and the alert will stop firing. At this time, you should make sure to let your coworkers know on Slack that you resolved the incident. This prevents confusion wondering whether the incident is still ongoing.
+When the incident has concluded, graphs will return to normal, and the alert will stop firing. At this time, let your coworkers know on Slack that you resolved the incident. This prevents confusion wondering whether the incident is still ongoing.
 
-## 10. Start a post-mortem if appropriate
+## 8. Start a post-mortem if appropriate
 
-In the case of a major incident, a post-mortem is appropriate. A post-mortem should be *blameless*. Its goal isn't to point fingers, but to identify where the processes worked and where they need improvement. You should use a template to start a post-mortem, and use the Slack timestamps from your messages to create a timeline of the incident.
+In the case of a major incident, a post-mortem is appropriate. A post-mortem should be *blameless*. Its goal isn't to point fingers, but to identify where the processes worked and where they need improvement. Use a template to start a post-mortem, and use the Slack timestamps from your messages to create a timeline of the incident.
 
 This isn't required for every incident, but it's useful for problems that take significant time to resolve or for unique issues.
