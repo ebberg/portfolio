@@ -28,7 +28,7 @@ You will see a form with a variety of fields to fill out. This tutorial will wal
 
 ## 1. Define a graphite target
 
-The first field for you to fill out is the "Graphite targets" field. You can add more graphite targets with the "Add target" button.
+The first field for you to fill out is the "Graphite targets" field. Add more graphite targets with the "Add target" button.
 
 A graphite target is the query string from a graphite metric. Experiment with different metrics from the Graphite composer. When you are ready, copy and paste the query string into this field.
 
@@ -36,7 +36,7 @@ For example, `timeShift(machines.fsao41.gmond.system.net.out,"1day")` will look 
 
 ## 2. Add tags
 
-Next, you can add tags. This enables you to search for existing alerts later. For example, you can tag by team, or by environment.
+Next, add tags. This enables you to search for existing alerts later. For example, tag by team, or by environment.
 
 ## 3. Define time to check
 
@@ -78,4 +78,4 @@ There are a few optional and advanced features to adding an alert of which you m
 
 At this point, click the button that says "Save." Your alert will be checked every polling interval, with a default of every five minutes, along with the rest of the configured alerts.
 
-On the alertmon home screen, you can now see your alert under "Recent Alert Definitions."
+On the alertmon home screen, view your alert under "Recent Alert Definitions."
